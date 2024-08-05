@@ -7,6 +7,12 @@ var typed = new Typed('.multiple-text', {
   loop: true
 });
 
+function myFunction() {
+  alert("message successfully sent").then(response => {
+    window.location.href = 'index.html';
+  })
+}
+
 /*scroll sections active link */
 let sections = document.querySelectorAll('section');
 let navlinks = document.querySelectorAll('header nav a');
